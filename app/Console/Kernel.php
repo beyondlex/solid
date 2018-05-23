@@ -2,16 +2,8 @@
 
 namespace App\Console;
 
-use App\Console\Commands\ConfigList;
-use App\Console\Commands\FacadeInfo;
-use App\Console\Commands\ZkLockCmd;
-use App\Console\Commands\Mdf;
-use App\Console\Commands\MosquittoPub;
-use App\Console\Commands\MosquittoSub;
-use App\Console\Commands\SendMail;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
-use Api\Zk\Jobs\AttendanceLogRefresh;
 
 class Kernel extends ConsoleKernel
 {
@@ -22,13 +14,6 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         //
-        FacadeInfo::class,
-		SendMail::class,
-		ConfigList::class,
-		Mdf::class,
-		MosquittoSub::class,
-		MosquittoPub::class,
-        ZkLockCmd::class,
     ];
 
     /**
