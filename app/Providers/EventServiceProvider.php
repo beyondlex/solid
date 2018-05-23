@@ -22,7 +22,7 @@ class EventServiceProvider extends ServiceProvider
 
     protected $subscribe = [
 		DeviceReqSubscriber::class,
-        HikEventListener::class,
+        //HikEventListener::class,
 	];
 
     /**

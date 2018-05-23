@@ -46,7 +46,7 @@ class Kernel extends ConsoleKernel
         //    ->everyMinute()
         //    ->appendOutputTo(base_path('job.log'))
         //;
-        $schedule->job(new AttendanceLogRefresh())->dailyAt('01:00');//每天01:00执行锁打卡数据同步任务
+        //$schedule->job(new AttendanceLogRefresh())->dailyAt('01:00');//每天01:00执行锁打卡数据同步任务
     }
 
     /**
